@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Un pequeño viaje por las grandes curiosidades de Portugal. Historia, fútbol, política, cultura y sorpresas.">
+  <title>Portugal Curioso — Un país, mil historias</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="portugal.css">
+  <script src="datos-extra.js" defer></script><script src="app.js" defer></script><script src="quiz.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#explorar">Saltar a las curiosidades</a>
+  <header class="header wrap"><a class="brand" href="./" aria-label="Portugal Curioso, inicio"><span class="brand-icon">P<span>c</span></span><span>portugal<span class="brand-light">curioso</span></span></a><nav aria-label="Navegación principal"><a href="#explorar">Explorar</a><a href="#juego">Jugar al quiz</a><a href="#acerca">Acerca de</a></nav><span class="edition">UNA MIRADA DIFERENTE <span class="flag" aria-label="Portugal"></span></span></header>
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy"><div class="eyebrow"><span class="small-line"></span> BEM-VINDO A PORTUGAL 🇵🇹</div><h1 id="hero-title">Se siente.<br>Se vive.<br><em>É Portugal.</em></h1><p>El rojo de la pasión. El verde de sus paisajes. El azul de sus azulejos. Viaja entre goles, sabores, revoluciones y pequeñas historias que hacen grande a Portugal.</p><div class="hero-actions"><a class="button primary" href="#explorar">¡Quiero un dato curioso!</a><button class="button secondary random" type="button"><span aria-hidden="true">✦</span> Sorpréndeme</button></div><div class="hero-note"><span>120 historias</span> 6 temas · Un país por descubrir</div></div>
+      <div class="hero-visual"><div class="tile-band" aria-hidden="true"></div><figure><img src="lisboa.jpg" alt="Panorama de Lisboa, con sus tejados rojizos, el río Tajo y el puente 25 de Abril"><figcaption><span>LISBOA, PORTUGAL</span><span>38°43′ N · 9°08′ O</span></figcaption></figure><div class="photo-stamp">Olá!<small>BIENVENIDO A PORTUGAL</small></div><div class="visual-bottom"><span>El Atlántico de fondo.<br>Mil historias por delante.</span><span class="visual-number" aria-hidden="true">PT.</span></div></div>
+    </section>
+    <div class="passport-strip" aria-label="Sabores y símbolos portugueses"><span>SAUDADE</span><span>⚽ FUTEBOL</span><span>AZULEJOS</span><span>PASTÉIS DE NATA</span><span>♫ FADO</span><span>ATLÂNTICO</span></div>
+<section class="surprise-section" id="explorar" aria-labelledby="explore-title">
+      <div class="surprise-inner"><div class="eyebrow">120 CURIOSIDADES · UNA SORPRESA CADA VEZ</div>
+      <h2 id="explore-title">Psst… Portugal tiene<br><em>algo que contarte.</em></h2>
+      <p class="surprise-lead">Toca el botón y descubre una historia que no te esperabas.</p>
+      <button class="surprise-trigger random" id="reveal-fact" type="button" aria-controls="fact-reveal"><span class="button-spark" aria-hidden="true">✦</span><span>¡Dame una sorpresa de Portugal!<small>Haz clic. Déjate sorprender.</small></span><span class="button-spark" aria-hidden="true">✦</span></button>
+      <div id="fact-reveal" class="fact-reveal" role="status" aria-live="polite" aria-atomic="true"></div>
+      <p id="discovery-count" class="discovery-count">Historia, fútbol, sabores y mucho más. ¿Qué te tocará?</p></div>
+    </section>
+    <section class="quiz-section wrap" id="juego" aria-labelledby="quiz-heading"><div class="quiz-intro"><div class="eyebrow">DESAFÍO PORTUGAL · JUEGO INTERACTIVO</div><h2 id="quiz-heading">¿Turista curioso<br>o alma portuguesa?</h2><p>10 preguntas por partida. Elige una respuesta, descubre su historia y suma puntos. Cada viaje trae una combinación distinta.</p><div class="quiz-badges"><span>10 preguntas</span><span>Sin cronómetro</span><span>100 puntos posibles</span></div><p class="quiz-record" id="quiz-record"></p></div><div class="quiz-board" id="quiz-board" aria-label="Juego de preguntas"></div></section>
+
+    <section class="closing wrap" id="acerca"><span class="closing-mark" aria-hidden="true">✦</span><div><div class="eyebrow">SIEMPRE HAY ALGO POR DESCUBRIR</div><h2>Un país se conoce también<br>por sus pequeñas historias.</h2><p>120 historias sobre fútbol, historia, política, cultura, gastronomía y sorpresas. Descubre una historia con cada clic y vuelve al quiz para poner a prueba lo que aprendiste.</p></div><button class="button primary random" type="button">Una curiosidad más</button></section>
+  </main>
+  <footer class="wrap"><div class="footer-main"><strong>portugal curioso.</strong><span>Hecho para descubrir, sin prisa.</span><a href="#hero-title">Volver al inicio</a></div><p class="credit">Fotografía: <a href="https://commons.wikimedia.org/wiki/File:Lisbon_Panorama.jpg" target="_blank" rel="noopener noreferrer">Mass147~commonswiki / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>. Imagen recortada en pantalla.</p></footer>
+
+</body>
+</html>
+

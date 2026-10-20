@@ -106,7 +106,7 @@
 .region-label--europe{right:7%;top:7%}
 .region-label--africa{right:7%;bottom:7%}
 .region-label--ocean{left:19%;bottom:12%;color:#4f8198}
-.region-label--portugal{left:65%;top:31%;padding:3px 5px;border:1px solid #ad2928;border-radius:4px;background:#fff9e8;color:#a82627;font-size:8px}
+.region-label--portugal{left:58%;top:31%;padding:3px 5px;border:1px solid #ad2928;border-radius:4px;background:#fff9e8;color:#a82627;font-size:8px}
 .island-map-point{position:absolute;z-index:3;width:13px;height:13px;transform:translate(-50%,-50%);border:2px solid #fff;background:#c52e2c;border-radius:50%;box-shadow:0 0 0 3px #c52e2c52,0 2px 5px #18334b70;pointer-events:none}
 .island-map-point--portugal{left:80%;top:36%;width:10px;height:10px;background:#edc64e;box-shadow:0 0 0 3px #a62b2870,0 1px 4px #18334b66}
 .island-map-point--azores{left:13%;top:25%}

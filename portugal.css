@@ -77,3 +77,49 @@
 @media(max-width:900px){.atlas-layout{grid-template-columns:1fr 1fr}.atlas-detail{grid-template-columns:120px 1fr 1fr}.atlas-detail p{grid-column:2/-1}.atlas-detail-extra{grid-column:1/2}.atlas-detail-sources{grid-column:2/-1;margin-top:0}.worldcup-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:680px){.header{height:auto;min-height:100px;flex-wrap:wrap;justify-content:center;padding:13px 14px;gap:8px}.header nav{width:100%;gap:8px 17px}.header nav a{font-size:11px}.atlas-section{padding:38px 18px 28px}.atlas-heading{margin-bottom:22px}.atlas-layout{grid-template-columns:1fr;gap:12px}.atlantic-inset{min-height:220px}.atlas-detail{grid-column:auto;grid-template-columns:1fr 1.5fr;padding:17px;gap:8px 13px}.atlas-detail-tag{grid-column:1/-1}.atlas-detail h3{grid-column:1/-1;font-size:21px}.atlas-detail p{grid-column:1/-1}.atlas-detail-extra{grid-column:1/-1}.atlas-detail-sources{grid-column:1/-1}.history-context{align-items:flex-start;padding:15px;gap:12px}.history-context p{font-size:12px}.history-context a{white-space:normal}.atlas-sources{font-size:10px}.worldcups-section{padding:40px 18px}.worldcups-lead{font-size:13px}.worldcup-highlights{grid-template-columns:1fr;gap:8px}.worldcup-highlights article{padding:14px 17px}.worldcup-grid{grid-template-columns:1fr 1fr;gap:9px}.worldcup-card{padding:14px 12px}.worldcup-card--honor{padding-top:10px}.worldcup-year{font-size:29px}.worldcup-host{font-size:8px;letter-spacing:.7px}.worldcup-card h3{font-size:14px}.worldcup-card p{font-size:11px}.worldcup-badge{font-size:8px}.colombia-match{grid-template-columns:1fr;gap:9px;padding:17px}.colombia-label{grid-column:auto}.colombia-match h3{font-size:20px}.match-score{grid-column:auto;grid-row:auto;order:3;justify-content:center;padding:9px 0}.colombia-match>p,.colombia-match>a{grid-column:auto}.worldcup-sources{font-size:10px}}
 @media(max-width:380px){.worldcup-grid{grid-template-columns:1fr}.island-marker{font-size:8px;gap:5px}.island-marker--madeira{left:39%}.island-marker--selvagens{left:45%}.island-marker--canarias{left:57%}}
+
+/* Mapas ampliados: Portugal y sus archipiélagos */
+.world-map-surface{overflow:hidden}
+.world-zoom-overlay{position:absolute;inset:0;width:100%;height:100%;z-index:1;overflow:visible;pointer-events:none}
+.world-zoom-backdrop{fill:#e6edf0;filter:drop-shadow(0 5px 9px #102f4c55)}
+.world-zoom-leader{fill:none;stroke:#fff9e8;stroke-width:6;stroke-linecap:round;filter:drop-shadow(0 2px 2px #17334c66)}
+.world-zoom-crop image{filter:saturate(1.08)}
+.world-zoom-ring{fill:none;stroke:#fffdf3;stroke-width:6;filter:drop-shadow(0 2px 4px #18384a55)}
+.world-zoom-ring-inner{fill:none;stroke:#143f79;stroke-opacity:.24;stroke-width:2}
+.world-zoom-label rect{fill:#123e79;stroke:#fff8dd;stroke-width:2}
+.world-zoom-label text{fill:#fff8dd;font:700 11px Arial,sans-serif;letter-spacing:1px}
+.map-marker{z-index:3;left:47.8%;top:31.7%;transform:translate(-50%,-50%);display:block;width:124px;height:70px;color:#fff7dc}
+.map-marker>span{display:block}
+.map-pin-badge{position:absolute;left:50%;top:5px;z-index:2;width:46px;height:46px;transform:translateX(-50%);display:grid;place-items:center;border:3px solid #fff9df;border-radius:50%;background:#d2a943;box-shadow:0 0 0 4px #173d775c,0 3px 9px #0d243c70}
+.map-pin-flag{position:relative;width:36px;height:36px;overflow:hidden;border:1px solid #fff;border-radius:50%;background:linear-gradient(90deg,#087443 0 40%,#e52e32 40% 100%);box-shadow:inset 0 0 0 1px #122a3040}
+.map-pin-flag i{position:absolute;left:39%;top:34%;width:12px;height:12px;border:1px solid #a7802b;border-radius:50%;background:#fff0bd;box-shadow:0 0 0 2px #fff8e4a8}
+.map-pin-flag b{position:absolute;left:44%;top:36%;color:#c52b31;font-size:7px;line-height:1}
+.map-pin-tip{position:absolute;left:calc(50% - 5px);top:43px;z-index:1;width:10px;height:15px;background:#c8312e;clip-path:polygon(0 0,100% 0,50% 100%);filter:drop-shadow(0 2px 2px #18304780)}
+.map-marker>b{position:absolute;right:calc(50% + 30px);top:25px;padding:6px 8px;border:1px solid #fff5d5;border-radius:5px;background:#123e79e8;color:#fff5d5;font-size:9px;letter-spacing:1px;line-height:1;box-shadow:0 2px 6px #102e4c55}
+.map-marker:hover .map-pin-badge,.map-marker:focus-visible .map-pin-badge{box-shadow:0 0 0 6px #f9d66b8c,0 3px 10px #0d243c70}
+.atlantic-inset{height:auto;min-height:0;aspect-ratio:8/5;background:#dceaf0;isolation:isolate}
+.atlantic-inset:before,.atlantic-inset:after{content:none}
+.atlantic-map{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:fill}
+.island-leaders{position:absolute;inset:0;z-index:2;width:100%;height:100%;overflow:visible;pointer-events:none}
+.island-leaders path{fill:none;stroke:#274c6b;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.5 1.2;filter:drop-shadow(0 1px 0 #fff)}
+.region-label{position:absolute;z-index:1;color:#567082;font-size:8px;font-weight:800;letter-spacing:1.2px;text-shadow:0 1px #fff}
+.region-label--europe{right:7%;top:7%}
+.region-label--africa{right:7%;bottom:7%}
+.region-label--ocean{left:19%;bottom:12%;color:#4f8198}
+.region-label--portugal{left:65%;top:31%;padding:3px 5px;border:1px solid #ad2928;border-radius:4px;background:#fff9e8;color:#a82627;font-size:8px}
+.island-map-point{position:absolute;z-index:3;width:13px;height:13px;transform:translate(-50%,-50%);border:2px solid #fff;background:#c52e2c;border-radius:50%;box-shadow:0 0 0 3px #c52e2c52,0 2px 5px #18334b70;pointer-events:none}
+.island-map-point--portugal{left:80%;top:36%;width:10px;height:10px;background:#edc64e;box-shadow:0 0 0 3px #a62b2870,0 1px 4px #18334b66}
+.island-map-point--azores{left:13%;top:25%}
+.island-map-point--madeira{left:50%;top:70%}
+.island-map-point--selvagens{left:53%;top:80%;width:11px;height:11px;background:#edc64e;box-shadow:0 0 0 3px #c88b1e62,0 2px 5px #18334b70}
+.island-map-point--canarias{left:55%;top:88%}
+.island-marker{z-index:4;display:grid;gap:2px;transform:none;min-width:75px;padding:6px 8px;border:1px solid #bccbd2;border-left:3px solid #c4312e;border-radius:6px;background:#fffdf3;color:#183f83;text-align:left;font-size:9px;font-weight:800;letter-spacing:.5px;line-height:1.15;box-shadow:0 2px 5px #1830472b;transition:transform .15s,background .15s,box-shadow .15s}
+.island-marker:hover,.island-marker[aria-pressed=true]{transform:translateY(-2px);background:#ffedb4;box-shadow:0 4px 8px #18304735}
+.island-marker strong{font-size:9px;letter-spacing:.5px}
+.island-marker small{display:block;margin:0;color:#68768a;font-size:8px;font-weight:500;letter-spacing:0}
+.island-marker--azores{left:2%;top:34%}
+.island-marker--madeira{left:32%;top:55%}
+.island-marker--selvagens{left:59%;top:67%}
+.island-marker--selvagens strong{color:#93630c}
+.island-marker--canarias{left:61%;top:87%}
+@media(max-width:380px){.island-marker{min-width:66px;padding:5px 6px;font-size:8px}.island-marker strong{font-size:8px}.island-marker--madeira{left:30%}.island-marker--selvagens{left:58%}.island-marker--canarias{left:60%}.map-marker>b{font-size:8px;padding:5px 6px}}

@@ -3,7 +3,7 @@ const atlasPoints = {
     tag: 'PORTUGAL · EUROPA',
     title: 'Portugal continental',
     copy: 'Portugal ocupa el oeste de la península ibérica. Selecciona un archipiélago para conocer su relación con los acuerdos atlánticos y las disputas históricas.',
-    extra: 'Los marcadores de las islas se muestran ampliados en el recuadro esquemático.',
+    extra: 'Los puntos del mapa están ampliados para que se distingan; su ubicación sigue la geografía real.',
     sources: [{ label: 'RTP Ensina: rivalidad y Tratado de Alcáçovas', url: 'https://ensina.rtp.pt/explicador/conflitos-entre-portugal-e-espanha-durante-a-expansao-h44/' }]
   },
   azores: {

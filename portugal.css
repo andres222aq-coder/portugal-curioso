@@ -3,3 +3,77 @@
 
 .surprise-section{background:#103f96;color:#fff5d5;padding:65px 24px 48px;border-block:9px double #7ba3eb;scroll-margin-top:12px}.surprise-inner{max-width:760px;margin:auto;text-align:center}.surprise-section .eyebrow{color:#ffdb71;justify-content:center}.surprise-section h2{font-size:clamp(36px,5vw,58px);line-height:1.12;margin:20px 0}.surprise-section h2 em{color:#ffda6a}.surprise-lead{color:#e4edff;font-size:17px}.surprise-trigger{position:relative;display:flex;align-items:center;justify-content:center;gap:22px;margin:30px auto 15px;padding:23px 30px;border:2px solid #ffea9f;border-radius:16px;background:#ffd15b;color:#174535;box-shadow:0 8px 0 #b78520,0 18px 35px #001c5550;font-size:21px;font-weight:700;max-width:100%;transition:transform .15s,box-shadow .15s}.surprise-trigger small{display:block;font-size:13px;font-weight:500;margin-top:5px}.surprise-trigger:hover{background:#ffdd7d;transform:translateY(-3px)}.surprise-trigger:active{transform:translateY(6px);box-shadow:0 2px 0 #b78520}.button-spark{font-size:30px;animation:twinkle 2.4s ease-in-out infinite}.button-spark:last-child{animation-delay:1.2s}.discovery-count{font-size:13px;color:#d4e2ff;margin-top:24px}.fact-reveal:empty{display:none}.fact-reveal{margin-top:32px}.surprise-card{background:#fff1c9;color:#143d32;padding:28px 34px 24px;text-align:left;border-radius:16px;border-top:7px solid var(--accent);box-shadow:0 16px 40px #00163f45}.reveal-meta{display:flex;justify-content:space-between;gap:15px;font-size:12px;font-weight:700;color:var(--accent)}.reveal-number{color:var(--accent);font:500 46px 'Playfair Display',Georgia,serif;margin-top:18px;overflow-wrap:anywhere}.surprise-card h3{font-size:30px;margin:12px 0}.surprise-card p{font-size:17px;line-height:1.75;color:#3e5147;margin:0 0 20px}.surprise-card .source{border-color:#d5c9a5;color:var(--accent);font-size:13px}@keyframes twinkle{0%,100%{transform:scale(.85) rotate(-12deg);opacity:.65}50%{transform:scale(1.15) rotate(12deg);opacity:1}}@media(max-width:680px){.surprise-section{padding:36px 18px}.surprise-trigger{font-size:17px;padding:18px 15px;gap:10px;width:100%}.button-spark{font-size:23px}.surprise-card{padding:22px}.surprise-card h3{font-size:26px}.surprise-section .eyebrow{font-size:11px}.reveal-meta{font-size:11px}.reveal-number{font-size:40px}}@media(prefers-reduced-motion:reduce){.button-spark{animation:none}}
 .author-signature{display:flex;align-items:center;justify-content:center;gap:16px;margin:26px 0 20px;padding:20px 22px;border:1px solid #cbbd83;border-radius:12px;background:#f2e9c8;color:#174535;text-align:left}.author-signature p{margin:4px 0;font-size:13px;line-height:1.65;overflow-wrap:anywhere}.author-signature strong{font-weight:700}.signature-star{font-size:28px;color:#a12e28}@media(max-width:480px){.author-signature{padding:16px 12px;gap:10px}.author-signature p{font-size:12px}}
+
+/* Atlas interactivo y archivo de los Mundiales */
+.header nav{display:flex;justify-content:center;flex-wrap:wrap;gap:9px 17px}
+.header nav a{white-space:nowrap;font-size:13px}
+.atlas-section{background:#e7edfb;border-block:10px double #1e4b9f;padding:58px max(24px,calc((100vw - 1280px)/2)) 38px;scroll-margin-top:12px}
+.atlas-heading{max-width:760px;margin:0 auto 30px;text-align:center}
+.atlas-heading .eyebrow{justify-content:center;color:#a62f2a}
+.atlas-heading h2,.worldcups-inner>h2{font-size:clamp(36px,5vw,54px);line-height:1.08;color:#153e85;margin:14px 0}
+.atlas-heading p{max-width:660px;margin:0 auto;color:#485970;line-height:1.75}
+.atlas-layout{max-width:1280px;margin:auto;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(300px,.8fr);gap:18px}
+.world-map-card,.atlantic-card,.atlas-detail{background:#fff8e4;border:1px solid #c8d3e8;border-radius:12px;overflow:hidden;box-shadow:0 5px 0 #153e8512;min-width:0}
+.atlas-card-top{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 17px;color:#183f83;font-size:10px;font-weight:800;letter-spacing:1.5px;border-bottom:1px solid #d9dfec}
+.atlas-card-top span+span{font-size:10px;font-weight:500;letter-spacing:.2px;color:#68768a;text-align:right}
+.atlas-card-top span:nth-child(2){display:flex;align-items:center;gap:7px}
+.legend-portugal{width:9px;height:9px;border-radius:50%;background:#d83d32;box-shadow:0 0 0 3px #d83d3230;display:inline-block}
+.world-map-surface{position:relative;line-height:0;background:#143d63}
+.world-map-surface img{display:block;width:100%;height:auto;aspect-ratio:960/440}
+.map-marker{position:absolute;left:47.8%;top:31.7%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:7px;padding:0;border:0;background:none;color:#fff4cd;text-shadow:0 2px 5px #00192b;font-size:10px;font-weight:800;letter-spacing:1px;line-height:1;cursor:pointer;white-space:nowrap}
+.map-marker>span{display:block;width:17px;height:17px;border:3px solid #fff5d5;background:#db3831;border-radius:50%;box-shadow:0 0 0 5px #d63b3260,0 0 17px #fff7c9}
+.map-marker:focus-visible,.island-marker:focus-visible{outline:3px solid #164da0;outline-offset:5px;border-radius:4px}
+.world-map-caption{display:flex;justify-content:space-between;padding:10px 15px;background:#fff8e4;color:#607087;font-size:9px;letter-spacing:1.1px;font-weight:700}
+.atlantic-inset{position:relative;min-height:242px;overflow:hidden;background-color:#e3edf3;background-image:linear-gradient(#194d7d12 1px,transparent 1px),linear-gradient(90deg,#194d7d12 1px,transparent 1px);background-size:34px 34px}
+.atlantic-inset:before{content:"";position:absolute;right:-3%;top:-16%;width:31%;height:76%;background:#c5d5c5;clip-path:polygon(30% 0,100% 0,100% 100%,70% 100%,65% 82%,52% 67%,60% 48%,38% 33%)}
+.atlantic-inset:after{content:"";position:absolute;right:-4%;bottom:-6%;width:31%;height:49%;background:#c5d5c5;clip-path:polygon(26% 0,100% 0,100% 100%,0 100%,16% 63%,9% 34%)}
+.inset-label{position:absolute;z-index:1;color:#667a89;font-size:8px;letter-spacing:1.5px;font-weight:800}
+.inset-label--north{right:8%;top:11%}.inset-label--south{right:11%;bottom:8%}
+.inset-ocean{position:absolute;left:30%;top:78%;z-index:1;color:#7793a1;font-size:8px;letter-spacing:1.5px;font-weight:700}
+.island-marker{position:absolute;z-index:2;display:flex;align-items:center;gap:8px;transform:translate(-4px,-50%);padding:3px 5px 3px 3px;background:#fff9e7dc;border:1px solid #c3ced6;border-radius:7px;color:#183f83;text-align:left;font-size:9px;font-weight:800;letter-spacing:.7px;line-height:1.2;cursor:pointer;white-space:nowrap;transition:background .15s,box-shadow .15s,transform .15s}
+.island-marker:hover,.island-marker[aria-pressed=true]{background:#ffedb4;box-shadow:0 3px 0 #9c7c3a44;transform:translate(-4px,-50%) scale(1.04)}
+.island-marker i{width:11px;height:11px;flex:0 0 11px;border:2px solid #fff;background:#bd302e;border-radius:50%;box-shadow:0 0 0 2px #bd302e55}
+.island-marker--azores{left:7%;top:27%}.island-marker--madeira{left:42%;top:45%}.island-marker--selvagens{left:48%;top:63%}.island-marker--selvagens i{background:#d59825;box-shadow:0 0 0 2px #d5982555}.island-marker--canarias{left:60%;top:78%;transform:translate(-4px,-50%)}
+.island-marker--canarias:hover,.island-marker--canarias[aria-pressed=true]{transform:translate(-4px,-50%) scale(1.04)}
+.island-marker small{display:block;margin-top:3px;color:#68768a;font-size:8px;font-weight:500;letter-spacing:0}
+.inset-caption{margin:0;padding:10px 15px;background:#fff8e4;color:#5e6d7e;font-size:11px;line-height:1.5}
+.atlas-detail{grid-column:1/-1;padding:21px 24px;display:grid;grid-template-columns:150px minmax(160px,.65fr) minmax(260px,1.3fr) minmax(170px,.65fr);align-items:center;gap:12px 22px;border-left:7px solid #b6302b}
+.atlas-detail-tag{font-size:9px;font-weight:800;letter-spacing:1.4px;color:#ad302d}
+.atlas-detail h3{margin:0;color:#124638;font-size:24px}
+.atlas-detail p{margin:0;color:#334c55;font-size:13px;line-height:1.7}
+.atlas-detail-extra{color:#5e6a70;font-size:11px;line-height:1.55}
+.atlas-detail-sources{grid-column:3/-1;margin-top:-8px}
+.atlas-detail-sources a,.history-context a,.atlas-sources a,.worldcup-sources a,.colombia-match>a{color:#164ca1;text-underline-offset:3px;font-weight:700}
+.atlas-detail-sources a{font-size:11px;margin-right:12px}
+.history-context{max-width:1280px;margin:19px auto 0;display:flex;align-items:center;gap:20px;background:#103f36;color:#fff1c4;border-radius:9px;padding:17px 22px}
+.history-context-mark{font:500 27px Georgia,serif;color:#ffd76a;flex:0 0 auto}
+.history-context p{margin:0;font-size:13px;line-height:1.75}.history-context strong{color:#fff1c4}.history-context a{color:#ffdb72;white-space:nowrap}
+.atlas-sources,.worldcup-sources{max-width:1280px;margin:15px auto 0;color:#5e6a7c;font-size:10px;line-height:1.8}
+.worldcups-section{background:#f6e7bd;padding:60px 24px 52px;scroll-margin-top:12px}
+.worldcups-inner{max-width:1280px;margin:auto}
+.worldcups-inner>.eyebrow{justify-content:center;color:#ad302d}
+.worldcups-inner>h2{text-align:center;color:#0e523e;margin-bottom:12px}
+.worldcups-lead{max-width:790px;margin:0 auto 28px;text-align:center;color:#4e6055;font-size:15px;line-height:1.8}
+.worldcup-highlights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:16px}
+.worldcup-highlights article{display:flex;flex-direction:column;gap:4px;min-width:0;background:#0d523e;color:#fff3d4;padding:17px 20px;border-radius:9px;border-bottom:4px solid #d3a942}
+.worldcup-highlights article:nth-child(2){background:#18469a}.worldcup-highlights article:nth-child(3){background:#a72e2a}
+.worldcup-highlights span{font-size:9px;font-weight:800;letter-spacing:1.3px;color:#ffe185}
+.worldcup-highlights strong{font:600 20px Georgia,serif}.worldcup-highlights small{font-size:11px;color:#f5e8c6}
+.worldcup-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.worldcup-card{position:relative;min-width:0;background:#fff8e4;border:1px solid #d4c38f;border-radius:9px;padding:17px 18px 19px;box-shadow:0 4px 0 #ad965329}
+.worldcup-card--honor{border-top:5px solid #bd302d;padding-top:13px}
+.worldcup-year{font:500 34px Georgia,serif;color:#17469a;line-height:1}
+.worldcup-host{margin-top:8px;color:#a52f2b;font-size:9px;font-weight:800;letter-spacing:1.1px}
+.worldcup-card h3{margin:10px 0 6px;color:#124638;font:700 16px Arial,sans-serif}
+.worldcup-card p{margin:0;color:#556056;font-size:12px;line-height:1.65}
+.worldcup-badge{display:inline-block;margin-top:11px;padding:5px 9px;background:#f3dda0;color:#6f4715;border-radius:14px;font-size:9px;font-weight:800;letter-spacing:.3px}
+.colombia-match{display:grid;grid-template-columns:1fr auto;gap:7px 24px;align-items:center;margin-top:19px;padding:21px 25px;background:#164a99;color:#fff4d4;border-radius:10px;border-left:8px solid #d5b74e}
+.colombia-label{grid-column:1/-1;color:#ffe287;font-size:10px;font-weight:800;letter-spacing:1.3px}
+.colombia-match h3{margin:0;font-size:23px}.colombia-match>p{grid-column:1;margin:0;color:#e5ecfa;font-size:12px;line-height:1.6}
+.colombia-match>a{grid-column:1;font-size:11px;color:#ffdf79}
+.match-score{grid-column:2;grid-row:2 / span 2;display:flex;align-items:center;gap:13px;white-space:nowrap;font-size:12px;font-weight:700}
+.match-score strong{font:600 25px Georgia,serif;color:#ffe080}
+.worldcup-sources{margin-top:17px}
+@media(max-width:900px){.atlas-layout{grid-template-columns:1fr 1fr}.atlas-detail{grid-template-columns:120px 1fr 1fr}.atlas-detail p{grid-column:2/-1}.atlas-detail-extra{grid-column:1/2}.atlas-detail-sources{grid-column:2/-1;margin-top:0}.worldcup-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.header{height:auto;min-height:100px;flex-wrap:wrap;justify-content:center;padding:13px 14px;gap:8px}.header nav{width:100%;gap:8px 17px}.header nav a{font-size:11px}.atlas-section{padding:38px 18px 28px}.atlas-heading{margin-bottom:22px}.atlas-layout{grid-template-columns:1fr;gap:12px}.atlantic-inset{min-height:220px}.atlas-detail{grid-column:auto;grid-template-columns:1fr 1.5fr;padding:17px;gap:8px 13px}.atlas-detail-tag{grid-column:1/-1}.atlas-detail h3{grid-column:1/-1;font-size:21px}.atlas-detail p{grid-column:1/-1}.atlas-detail-extra{grid-column:1/-1}.atlas-detail-sources{grid-column:1/-1}.history-context{align-items:flex-start;padding:15px;gap:12px}.history-context p{font-size:12px}.history-context a{white-space:normal}.atlas-sources{font-size:10px}.worldcups-section{padding:40px 18px}.worldcups-lead{font-size:13px}.worldcup-highlights{grid-template-columns:1fr;gap:8px}.worldcup-highlights article{padding:14px 17px}.worldcup-grid{grid-template-columns:1fr 1fr;gap:9px}.worldcup-card{padding:14px 12px}.worldcup-card--honor{padding-top:10px}.worldcup-year{font-size:29px}.worldcup-host{font-size:8px;letter-spacing:.7px}.worldcup-card h3{font-size:14px}.worldcup-card p{font-size:11px}.worldcup-badge{font-size:8px}.colombia-match{grid-template-columns:1fr;gap:9px;padding:17px}.colombia-label{grid-column:auto}.colombia-match h3{font-size:20px}.match-score{grid-column:auto;grid-row:auto;order:3;justify-content:center;padding:9px 0}.colombia-match>p,.colombia-match>a{grid-column:auto}.worldcup-sources{font-size:10px}}
+@media(max-width:380px){.worldcup-grid{grid-template-columns:1fr}.island-marker{font-size:8px;gap:5px}.island-marker--madeira{left:39%}.island-marker--selvagens{left:45%}.island-marker--canarias{left:57%}}

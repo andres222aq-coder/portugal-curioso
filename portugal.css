@@ -93,8 +93,7 @@
 
 
 
-.map-pin-dot{position:absolute;left:50%;top:35px;z-index:2;width:16px;height:16px;transform:translate(-50%,-50%);border:3px solid #fff9df;border-radius:50%;background:#e52e32;box-shadow:0 0 0 3px #123f9a70,0 2px 6px #0d243c70}
-.map-marker>b{position:absolute;left:50%;right:auto;top:0;transform:translateX(-50%);padding:5px 8px;border:1px solid #fff5d5;border-radius:5px;background:#123e79e8;color:#fff5d5;font-size:9px;letter-spacing:1px;line-height:1;box-shadow:0 2px 6px #102e4c55}
+.map-marker>b{position:absolute;right:calc(50% + 30px);top:25px;padding:6px 8px;border:1px solid #fff5d5;border-radius:5px;background:#123e79e8;color:#fff5d5;font-size:9px;letter-spacing:1px;line-height:1;box-shadow:0 2px 6px #102e4c55}
 
 .atlantic-inset{height:auto;min-height:0;aspect-ratio:8/5;background:#dceaf0;isolation:isolate}
 .atlantic-inset:before,.atlantic-inset:after{content:none}
